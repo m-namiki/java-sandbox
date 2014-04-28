@@ -2,7 +2,7 @@ package jp.co.shantery.sandbox.util;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.nullValue;
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.*;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -79,4 +79,5 @@ public class DateUtilsTest {
 		assertThat(DateUtils.isDate("", "yyyy-MM-dd"), is(false));
 		assertThat(DateUtils.isDate(null, "yyyy-MM-dd"), is(false));
 	}
+	
 }
